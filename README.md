@@ -62,7 +62,32 @@ d$
 
 c：相当于d + i, 如c$ = d$ + i, cc = dd + i
 
+### 删除某一范围的内容
+
+> a:around
+>
+> i:inner
+
+da{：删除{}以及{}内的内容
+
+di{: 仅删除{}内的内容
+
+- **`daw`** to **d**elete **a** **w**ord (plus trailing whitespace)
+- **`ciw`** to **c**hange **i**nner **w**ord
+- **`das`** to **d**elete **a** **s**entence (**`dis`** to delete inner sentence)
+- **`da"`** to delete something in double quotes including the quotes themselves (**`di"`** deletes only the content **i**nside the quotes and spares the quotes)
+- **`ci"`** to change something inside double quotes
+- **`dap`** to delete a paragraph
+- **`dab`** **`da(`** or **`da)`** to delete a block surrounded by **`(`**
+- **`daB`** **`da{`** or **`da}`** to delete a block surrounded by **`{`**
+- **`dat`** to delete an HTML tag
+- **`cit`** to change the contents of an HTML tag
+
 ## 跳转
+
+w：跳一个词
+
+b：回跳一个词
 
 gd
 
@@ -72,7 +97,35 @@ gf
 
 <kbd>Ctrl</kbd>+i: 向前跳
 
-# Windows中被代替的常用快捷键
+## 重复上一次操作
+
+<kbd>.</kbd>
+
+# learn vim
+
+\- *`y`* (yank): Copy in Vim jargon
+
+\- *`p`* (put): Paste in Vim jargon
+
+\- *`g~`* (switch case): changes letters from lowercase to uppercase and back. alternatively, use *`gu`* to make something lowercase and *`gu`* to make something uppercase
+
+\- *`>`* (shift right): adds indentation
+
+\- *`<`* (shift left): Removes indentation
+
+\- *`=`* (format code): Formats code
+
+\- *`x`* is equivalent to *`dl`* and deletes the character under the cursor
+
+\- *`X`* is equivalent to *`dh`* and deletes the character before the cursor
+
+\- *`s`* is equivalent to *`ch`*, deletes the character under the cursor and puts you into Insert mode
+
+\- *`r`* allows you to replace one single character for another. Very handy to fix typos.
+
+\- *`~`* to switch case for a single characte
+
+## Windows中被代替的常用快捷键
 
 - `<CTRL-C>` no longer copies, and instead it sends you back to *Normal mode*. The command that we use in Vim for copying is far less verbose: **`y`** (for yank).
 - `<CTRL-V>` no longer pastes and instead sends you into *Visual-block mode*. Again, the command we use in Vim for pasting is less verbose: Just a single **`p`** (for paste).
