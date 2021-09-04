@@ -130,3 +130,7 @@ gf
 - `<CTRL-C>` no longer copies, and instead it sends you back to *Normal mode*. The command that we use in Vim for copying is far less verbose: **`y`** (for yank).
 - `<CTRL-V>` no longer pastes and instead sends you into *Visual-block mode*. Again, the command we use in Vim for pasting is less verbose: Just a single **`p`** (for paste).
 - `<CTRL-F>` no longer lets you search, and instead it allows you to scroll your screen one page forward. Once more, the command we use in Vim for searching is closer to your fingertips: `/{term-i-am-searching-for}`.
+
+# AndroidStudio插件
+
+[在Android Studio上使用IdeaVim插件_ShortChin的博客-CSDN博客](https://blog.csdn.net/ShortChin/article/details/51799901)
